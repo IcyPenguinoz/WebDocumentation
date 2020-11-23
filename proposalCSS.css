@@ -1,0 +1,111 @@
+html{
+  scroll-behavior: smooth;
+  /*Allows proper smooth navigation when clicking on navigation bar to page*/
+}
+body{
+  margin: 0;
+  padding: 0; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  width: 100%;
+  background: #FFFFFF;
+  overflow: hidden;
+  /*prevents scrollbars from appearing*/
+  position: fixed;
+  top: 0;
+
+}
+ul{
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li{
+  float: left;
+  /*Fix for alignment of nav bar: https://stackoverflow.com/questions/23737414/why-menu-created-with-ul-li-elements-displayed-in-reverse-order/23737545*/
+}
+
+a{
+  padding: 20px;
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  color: #060000;
+  font-weight: bold;
+
+
+}
+
+.logo{
+  height: auto;
+  width: 50px;
+  padding: 20px;
+}
+
+#Home{  
+  background-image: url('1st Image.jpg');
+  background-size: cover;
+  height: 920px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#Our_Impact{  
+  height: 920px;
+  background: yellow;
+  display: inline-block;
+  width:100%;
+}
+
+#Your_Impact{  
+  height: 920px;
+  background: blue;
+  display: inline-block;
+  width: 100%;
+
+}
+#Donate_Now{  
+  height: 920px;
+  background: green;
+  display: inline-block;
+  width:100%;
+
+}
+
+#Home_Text{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Donate_Now_Text{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+button{
+  padding: 5px 10px;
+  margin-top: -10px;
+  background-color: rgba(46,196,182,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+h1{
+  margin: 100px;
+  text-align: center;
+  padding: 0;
+}
+
