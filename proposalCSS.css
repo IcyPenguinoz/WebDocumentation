@@ -53,38 +53,30 @@ a{
 #Home{  
   background-image: url('1st Image Home.png');
   background-size: cover;
-  height: 880px;
+  background-position: center center;
+  height: 100vh;
   display: inline-block;
   background-repeat: no-repeat;
   width: 100%;
 }
 
-#Home::before{
-  position: absolute;
-  content: '';
-  width: 2000px;
-  height: 60px;
-  background-color: #FBECE1;
-  bottom: 0;
-
-}
 
 #Our_Impact{  
-  height: 860px;
+  height: 100vh;
   background: yellow;
   display: inline-block;
   width:100%;
 }
 
 #Your_Impact{  
-  height: 860px;;
+  height: 100vh;
   background: blue;
   display: inline-block;
   width: 100%;
 
 }
 #Donate_Now{  
-  height: 860px;;
+  height: 100vh;
   background: green;
   display: inline-block;
   width:100%;
@@ -126,5 +118,18 @@ h1{
   margin: 100px;
   text-align: center;
   padding: 0;
+}
+
+@media screen and (min-width: 601px) {
+    #Home_Text{
+      font-size: 40px;
+    }
+  }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  #Home_Text {
+    font-size: 10px;
+  }
 }
 
