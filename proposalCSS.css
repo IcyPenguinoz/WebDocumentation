@@ -55,6 +55,7 @@ a{
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  /*vh or v*/
   display: inline-block;
   background-repeat: no-repeat;
   width: 100%;
@@ -84,17 +85,17 @@ a{
 }
 
 #Home_Text{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   font-family: Arial;
+  font-weight: bold;
+  color: #060000;
   position: absolute;
+  font-size: 2.5em;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 40px;
-  font-weight: bold;
-  color: #060000;
 
 }
 
@@ -122,14 +123,14 @@ h1{
 
 @media screen and (min-width: 601px) {
     #Home_Text{
-      font-size: 40px;
+      font-size: 2.5em;
     }
   }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   #Home_Text {
-    font-size: 10px;
+    font-size: 1em;
   }
 }
 
