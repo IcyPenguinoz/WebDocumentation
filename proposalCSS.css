@@ -85,6 +85,7 @@ a{
   height: 100vh; /* set height as 120 to allow elements to not overflow and fit properly/nicely */
   background: #F6F6F6;
   display: inline-block;
+  width: 100%;
 }
 
  #Our_Impact_First_Column{
@@ -109,20 +110,15 @@ a{
 }
 
 .Our_Impact_Headings{
-  font-size: 25px;
+  font-size: 1.5625em;
   font-weight: bold;
   border-bottom: 2px solid #000000;
   padding-bottom: 5px;
 }
 
-
-
 .Our_Impact_Paragraphs{
-  font-size: 20px;
+  font-size: 1.25em;
 }
-
-
-
 
 .Our_Impact_Title{
   height: 10em;
@@ -270,6 +266,7 @@ h1{
  
 .Donation_Option{
   text-align: center;
+
   
 }
 
@@ -309,4 +306,25 @@ h1{
   border-radius: 2.5em; 
 }
 
+.Donation_Inspiration{
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  margin-right: 100px;
+}
 
+.btn-btn-continue{
+  display: flex;
+  padding: 7px 8px;
+  background-color: rgba(46,196,182,1);
+  border: none;
+  font-family: Montserrat;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  align-content: center; 
+
+
+}
