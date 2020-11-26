@@ -70,6 +70,16 @@ a{
   width: 100%;
 }
 
+#Home::after {
+  position: absolute;
+  background: #FBECE1;
+  content: '';
+  height: 10vh;
+  width: 100%;
+  bottom: 0; /*To add rectangle to bottom of screen*/
+}
+
+
 
 #Our_Impact{  
   height: 100vh; /* set height as 120 to allow elements to not overflow and fit properly/nicely */
@@ -78,7 +88,6 @@ a{
 }
 
  #Our_Impact_First_Column{
-  position: relative; 
   width: 1000px;
   display: flex;
   justify-content: space-between;
@@ -92,8 +101,8 @@ a{
 #Our_Impact_Second_Column{
   display: flex;
   flex-direction: column; 
-  margin-right: 300px;
-  gap: 50px; /*Allows for spacing between text elements */ 
+  margin-right: 18.75em;
+  gap: 3.125em; /*Allows for spacing between text elements */ 
   text-align: center; 
   justify-content: space-between;
 
