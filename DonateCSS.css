@@ -1,3 +1,17 @@
+
+html, body{
+  height: 100%
+}
+
+*{
+  padding: 0;
+  margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+
 html{
   scroll-behavior: smooth;
   /*Allows proper smooth navigation when clicking on navigation bar to page*/
@@ -103,10 +117,50 @@ h1{
 
 #Personal_Details_Text{
   text-align: center;
-  margin: 0 auto;
+  margin: 20px 0;
+}
+
+.Donation-form{
+  display: flex;
+  align-items: center;
+  justify-content: center; /*Displays donation box in the middle/center of page*/
+}
+
+.Donation-form p{
+  font-size: 20px;
+  margin: 5px 0; 
+  margin-right: 285px;
+}
+
+.Donation-form p::after{ /*Adding extra red asterisks at end of title text to indicate that it needs to be filled in */
+  content: "*"; 
+  color: red;
 }
 
 
+.Donation-form input{
+  font-size: 16px;
+  padding: 15px 10px;
+  width: 100%;
+  border-color: #707070;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+
+.Donation-form button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  margin-left: 150px;
+  padding: 10px 15px;
+  width: 50%;
+
+}
 
 @media screen and (min-width: 691px) {
     #Home_Text{
@@ -147,9 +201,27 @@ h1{
  
 
 #Donate_Now{  
-  height: 100vh;
+  height: 100%;
   background: #F6F6F6;
   display: inline-block;
   width: 100%;
+
+}
+
+.Donation_Nav{
+  padding: 7px 8px;
+  margin-top: -15px;
+  background-color: rgba(46,196,182,1);
+  border: none;
+  font-family: Montserrat;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
 
 }

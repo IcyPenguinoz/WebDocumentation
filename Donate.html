@@ -22,10 +22,10 @@
       <label for = "toggle" id = "hamburger-menu"> &#9776 </label> 
       <input type = "checkbox" id = "toggle"/>
       <div class = "menu">
-        <li id = "Home_Attribute"><a href="#Home">Home</a></li>
-        <li><a href = "#Our_Impact"> Our Impact </a> </li>
-        <li><a href = "#Your_Impact"> Your Impact </a></li> 
-        <li> <a href = "#Donate_Now"> <button class = "Donation_Nav"> Donate Now </button> </a> </li>
+        <li id = "Home_Attribute"><a href="proposal.html#Home">Home</a></li>
+        <li><a href = "proposal.html#Our_Impactt"> Our Impact </a> </li>
+        <li><a href = "proposal.html#Your_Impact"> Your Impact </a></li> 
+        <li> <a href = "proposal.html#Donate_Now"> <button class = "Donation_Nav"> Go Back </button> </a> </li>
       </div> 
     </ul>
 </nav>
@@ -33,6 +33,29 @@
   <div id = "Donate_Now"> - <!--Make proper div sections for this area - ie two columns left and right-->
   <h1 id = "Donate_Now_Text"> Donate Now </h1>
   <h2 id = "Personal_Details_Text"> Fill in your personal details to donate: </h2> 
+
+
+  <!--Code for donation form, use of required at end of input codes in order to require user to enter in each field (in order to properly donate)--> 
+  <div class = "Donation-form">
+    <form action = "#" method = "POST">
+      <p> Full Name</p> 
+      <input type = "text" name="fullname" placeholder = "John Smith" required>
+      <p> Email</p>
+      <input type = "email" name = "Email" placeholder = "johnsmith@example.com" required> 
+      <p> Phone Number</p>
+      <input type = "tel" name = "phone" placeholder = "0476195331" required> 
+      <p> Credit/Debit Card Number</p>
+      <input type = "tel" name = "phone" placeholder = "1111-2222-3333-4444" required> 
+      <p> CVC/CCC</p>
+      <input type = "tel" name = "phone" placeholder = "517" required> 
+      <button type = "submit" class = "Donation_Nav"> Donate </button> 
+      <!-- 
+      <a href = "proposal.html#Donate_Now"><button type = "submit" class = "Go_Back" id = "Go_Back"> Go Back </a> </button>  --> 
+
+
+
+
+
 
 </body>
 </html>
