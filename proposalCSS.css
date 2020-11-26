@@ -72,7 +72,7 @@ a{
 
 
 #Our_Impact{  
-  height: 100vh;
+  height: 100vh; /* set height as 120 to allow elements to not overflow and fit properly/nicely */
   background: #F6F6F6;
   display: inline-block;
 }
@@ -84,6 +84,7 @@ a{
   justify-content: space-between;
   flex-direction: column; 
   margin-left: 100px;
+  gap: 10px; /*Little gap added between image elements*/
   float: left; 
 
 }
@@ -91,22 +92,31 @@ a{
 #Our_Impact_Second_Column{
   display: flex;
   flex-direction: column; 
+  margin-right: 300px;
+  gap: 50px; /*Allows for spacing between text elements */ 
   text-align: center; 
   justify-content: space-between;
-  word-wrap: break-word;
 
 }
 
-.container{
-  display:flex;
+.Our_Impact_Headings{
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+}
+
+
+
+.Our_Impact_Paragraphs{
+  font-size: 20px;
 }
 
 
 
 
-#Our_Impact_Title{
-  height: 7vh;
-  background: #FBECE1;
+.Our_Impact_Title{
+  height: 10em;
   text-align: center;
 }
 
@@ -204,7 +214,7 @@ a{
 }
 
 h1{
-  margin: 100px;
+  margin: 80px;
   font-size: 2.5em; 
   text-align: center;
   padding: 0;
