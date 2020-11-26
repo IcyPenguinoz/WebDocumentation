@@ -77,6 +77,35 @@ a{
   display: inline-block;
 }
 
+ #Our_Impact_First_Column{
+  display: flex; 
+  flex-direction: column; 
+  align-self: flex-start;
+  margin-left: 100px;
+  float: left; 
+
+}
+
+#Our_Impact_Second_Column{
+  display: inline-block;
+  flex-direction: column; 
+
+}
+
+
+
+#Our_Impact_First_Row{
+
+}
+
+#Our_Impact_Second_Row{
+  margin-right: 200px;
+  max-width: 400px;
+  display: inline-block;
+  flex-direction: center;
+
+}
+
 #Our_Impact_Title{
   height: 7vh;
   background: #FBECE1;
