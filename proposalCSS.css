@@ -368,3 +368,32 @@ h1{
 
 }
 
+.footer { /*Added fixed footer on bottom as a neat addition to show World Vision's contact detail in a quick and simple manner not being too obtrusive*/
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 5%;
+   width: 100%;
+   background-color: #FFA96B;
+   color: white;
+   text-align: center;
+
+}
+
+.footer p{
+  margin-left: 200px;
+
+}
+
+
+.fa{
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  float: right;
+}
+
+
