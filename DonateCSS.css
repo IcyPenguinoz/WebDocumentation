@@ -1,205 +1,156 @@
-/* NOTE: You DON'T have to make any changes to the CSS */
-
-
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+html{
+  scroll-behavior: smooth;
+  /*Allows proper smooth navigation when clicking on navigation bar to page*/
+}
+body{
+  margin: 0;
+  padding: 0; 
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-	margin: 0;
-	display: grid;
-	grid-template-columns: minmax(min-content, 200px) 1fr;
-	grid-template-areas: 
-  "header header"
-  "nav main"
-  "footer footer";
-	font-family: system-ui, sans-serif;
-	font-size: 1.5em;
+label{
+  font-size: 1.7em;
+  line-height: 2.3em;
+  display:none;
 }
 
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0;
-	margin-bottom: 0.5em;
-	font-weight: 400;
+#toggle{
+  display: none;
 }
 
-h1 {
-	font-size: 5rem;
-	line-height: 1.2;
-	letter-spacing: -.1rem;
+nav{
+  width: 100%;
+  background: #FFFFFF;
+  overflow: hidden;
+  /*prevents scrollbars from appearing*/
+  position: fixed;
+  top: 0;
+  z-index: 1; /*Specifies stack order for elements - in this case nav bar has to be in front/on top of all elements on website https://www.w3schools.com/cssref/pr_pos_z-index.asp*/
+
 }
 
-h2 {
-	font-size: 3.8rem;
-	line-height: 1.25;
-	letter-spacing: -.1rem;
+ul{
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-h3 {
-	font-size: 2.6rem;
-	line-height: 1.3;
-	letter-spacing: -.1rem;
+li{
+  float: left;
+  /*Fix for alignment of nav bar: https://stackoverflow.com/questions/23737414/why-menu-created-with-ul-li-elements-displayed-in-reverse-order/23737545*/
 }
 
-h4 {
-	font-size: 2.0rem;
-	line-height: 1.35;
-	letter-spacing: -.08rem;
+a{
+  padding: 20px;
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  color: #060000;
+  font-weight: bold;
+  text-align: center;
+
 }
 
-header {
-	grid-area: header;
-	background: #455A64;
-	color: white;
-	padding: 4rem;
-	text-align: center;
+.logo{
+  margin-top: 10px;
+  margin-left: 30px;
+  height: auto;
+  width: 100px;
 }
 
-
-/* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-nav {
-	grid-area: nav;
-	background: #37474F;
-	padding-top: 1em;
+#Home{  
+  background-image: url('1st Image Home.png');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  /*vh or viewport height allows for responsive height when adjusting to mobile resolutions*/
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
-nav ul {
-	max-width: 200px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#Home::after {
+  position: absolute;
+  background: #FBECE1;
+  content: '';
+  height: 10vh;
+  width: 100%;
+  bottom: 0; /*To add rectangle to bottom of screen*/
 }
 
-nav ul>ul {
-	margin-left: 1em;
+#Home_Text{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #060000;
+  position: absolute;
+  font-size: 2.5em;
+  /*em allows for relative measurements/units for text allowing for responsiveness*/
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
 }
 
-nav ul li a {
-	display: block;
-	padding: 0.5rem 1rem;
-	color: white;
-	text-decoration: none;
-	transition: all 0.3s ease;
+.Donation_Nav{
+  padding: 7px 8px;
+  margin-top: -15px;
+  background-color: rgba(46,196,182,1);
+  border: none;
+  font-family: Montserrat;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
 }
 
-nav ul li a:hover {
-	color: rgb(150, 203, 230);
-	text-decoration: underline;
-}
-
-
-/* Content Areas
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-main {
-	grid-area: main;
-	padding-bottom: 40rem;
-}
-
-section {
-	max-width: 800px;
-	padding: 1em 2em;
-	margin: 0 auto;
-}
-
-section::after {
-	content: '';
-	display: block;
-	margin: 3em auto 0;
-	width: 100%;
-	max-width: 800px;
-	border-bottom: 1px solid #bbb;
-}
-
-footer {
-	grid-area: footer;
-	background: #607D8B;
-	color: white;
-	padding: 4rem;
-	text-align: center;
+h1{
+  margin: 80px;
+  font-size: 2.5em; 
+  text-align: center;
+  padding: 0;
 }
 
 
-/* Content
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-figure {
-	padding: 1em 0;
+
+
+@media screen and (min-width: 691px) {
+    #Home_Text{
+      font-size: 2.5em;
+      opacity: 0.81;
+    }
+
 }
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 690px) {
+  #Home_Text {
+    font-size: 1.375em;
+    /*Done exactly/properly to pixel size from Adobe XD mockup - used px to em conversion from w2s to calculate this*/
+    opacity: 0.81;
+  }
+  /*Code below is used for the responsive hamburger menu which comes in size when width is 600px wide or less */
+  label{ 
+      display: block;
+      cursor: pointer;
+      float: right;  /*Hamburger menu set to right side and cursor changed to pointer when hovered over*/
+      margin-right: 15px;
+  }
+  .menu{
+      text-align: center;
+      width: 100%;
+      display: none; 
+  }
 
-figure img {
-	display: block;
-	width: 100%;
-	max-width: min-content;
-	margin: 0 auto;
+  .menu a{
+      clear: right;
+      display: block;
+  }
+  #toggle:checked + .menu{
+      display: block;
+  }
 }
-
-figure iframe {
-	display: block;
-	margin: 0 auto;
-}
-
-figure figcaption {
-	text-align: center;
-}
-
-blockquote {
-	width: 80%;
-	margin: 2em auto; 
-  /* font-style: italics; */
-	font-style: normal;
-	padding: 1em 2em;
-	border-left: 8px solid #78C0A8;
-	font-size: 1em;
-	line-height: 1.4;
-	position: relative;
-	background: #ededed;
-}
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@media screen and (max-width: 860px) {
-	body {
-		display: block;
-	}
-	nav {
-		display: none;
-	}
-	section {
-		padding: 0.5em;
-	}
-	figure {
-		margin: 0;
-	}
-	figure iframe {
-		width: 100%;
-	}
-	figure img {
-		width: 100%;
-	}
-}
-
-
-/* Only use sticky nav if it can display at full height */
-
-@media (min-height: 300px) {
-	nav ul {
-		position: sticky;
-		top: 0;
-	}
-}
+ 

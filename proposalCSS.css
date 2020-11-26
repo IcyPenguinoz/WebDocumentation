@@ -263,9 +263,12 @@ h1{
       display: block;
   }
 }
+
+
  
 .Donation_Option{
   text-align: center;
+  margin-bottom: -50px;
 
   
 }
@@ -284,24 +287,28 @@ h1{
 
 }
 
+.Donation_Amount_Element{
+}
+
 .Donation_Amount{
-  align-items: flex-start; /* Ensures buttons don't stretch */ 
-  justify-content: left;
-  padding: 2px 10px;
-  margin-top: 5rem; 
   display: flex; 
   flex-direction: column; 
+  align-items: flex-start; /* Ensures buttons don't stretch */ 
+  padding: 2px 10px;
+  margin-top: 5rem; 
+  text-align: center;
 
 }
 
 .btn{
   position: relative; 
+  font-family: Montserrat;
   background: #FFFFFF;
   color: #000000;
-  font-size: 1em;
+  font-size: 2.1875em;
   width: 28rem;
   margin-bottom: 2rem;
-  margin-left: 12em; 
+  margin-left: 6em; 
   padding: 1rem 0; 
   border-radius: 2.5em; 
 }
@@ -315,7 +322,8 @@ h1{
 
 .btn-btn-continue{
   display: flex;
-  padding: 7px 8px;
+  flex-direction: column;
+  padding: 30px 100px;
   background-color: rgba(46,196,182,1);
   border: none;
   font-family: Montserrat;
@@ -325,6 +333,13 @@ h1{
   font-weight: bold;
   text-align: center;
   align-content: center; 
+  font-size: 20px;
+  margin-left: 290px;
 
+}
 
+.Select_Donate_Text{
+  display: inline-block;
+  margin-left: 270px; 
+  margin-bottom: 50px;
 }

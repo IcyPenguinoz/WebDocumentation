@@ -3,57 +3,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Web Documentation</title>
-	<link href="Donate.css" rel="stylesheet" type="text/css" />
+	<title>Web Proposal</title>
+  <link rel ="shortcut icon" type = "image/png" href = "favicon.png">
+  <!--Favicon icon -->
+    
+	<link href="DonateCSS.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  
 </head>
 
 <body>
-	<header>
-		<h1>World Vision - Website Proposal</h1>
-	</header>
-
-	<!-- NAVIGATION: Add your own list item links based on secion IDs and heading elements -->
-	<nav>
+<nav class = "navbar">
+    <!--Way to add image logo to navbar - https://github.com/creativetimofficial/material-kit/issues/107 -->
+    <img class ="logo" src = "World Logo.png"> 
 		<ul>
-      <li><a href="#background">Background Research</a></li>
-      <ul> 
-        <li><a href = "#Description"> Organisation Description </a> </li>
-        <li><a href = "#Key Info"> Key Information </a></li> 
-        <li> <a href = "#User Justification"> User Research </a> </li> 
-        <li><a href="#profiles">User Profiles</a></li>
-        <li><a href = "#Target User"> Target Audience </a> </li> 
-        <li><a href = "#The Concept"> The Concept </a></li> 
-      </ul>
-			<li><a href="#ideation">Ideation</a></li>
-			<ul>
-				<li><a href="#moodboards">Mood Boards</a></li>
-        <li><a href ="#sitemaps">Sitemaps</a></li>
-				<li><a href="#sketches">Sketches</a></li>
-			</ul>
-			<li><a href="#designs">Designs</a></li>
-			<ul>
-				<li><a href="#wireframes">Wireframes</a></li>
-				<li><a href="#mockups">Mockups</a></li>
-			</ul>
-			<li><a href="#references">References</a></li>
-		</ul>
-	</nav>
+      <label for = "toggle" id = "hamburger-menu"> &#9776 </label> 
+      <input type = "checkbox" id = "toggle"/>
+      <div class = "menu">
+        <li id = "Home_Attribute"><a href="proposal.html#Home">Home</a></li>
+        <li><a href = "proposal.html#Our_Impact"> Our Impact </a> </li>
+        <li><a href = "proposal.html#Your_Impact"> Your Impact </a></li> 
+        <li> <a href = ""> <button class = "Donation_Nav"> Donate Now </button> </a> </li>
+      </div> 
+    </ul>
+</nav>
 
-	<!-- MAIN CONTENT: Add your own sections as needed -->
-	<main>
-		<section id="background">
-			<h2>Reflection on Proposal</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet cupiditate cumque autem, ad dolores a iure cum ipsa. Facere dolorum dolor exercitationem quae recusandae quam expedita fugit est error! </h3>
-      <h2> Link to proposal link </h2>
-      <a href = "proposal.html"> Proposal Link </a>
-    </section>
-	</main>
 
-  <!-- FOOTER: Update with your details --> 
-	<footer>
-		Jason Thai - jtha5323
-	</footer>
-	</script>
-</body>
-
-</html>
+  <div id = "Home">
+     <p id = "Home_Text"> "We're committed to overcoming poverty, injustice and vulnerability in children - aiming to achieve everlasting change" </p>
+  </div>
