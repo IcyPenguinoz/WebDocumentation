@@ -276,6 +276,7 @@ h1{
 .Donation_Option select{
   background: #FFFFFF;
   border-color: #707070;
+  font-family: Montserrat;
   border-width: 3px;
   color: #000000;
   text-align: center; 
@@ -340,6 +341,18 @@ h1{
 
 .Select_Donate_Text{
   display: inline-block;
-  margin-left: 270px; 
+  margin-left: 255px; 
   margin-bottom: 50px;
+}
+
+.Donation_Benefits{
+  display: flex;
+  flex-direction: column; 
+  float: right;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 599.97px;
+  height: 500px;
+  top: 0;
+
 }
