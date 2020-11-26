@@ -8,6 +8,16 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+label{
+  font-size: 1.7em;
+  line-height: 2.3em;
+  display:none;
+}
+
+#toggle{
+  display: none;
+}
+
 nav{
   width: 100%;
   background: #FFFFFF;
@@ -69,6 +79,12 @@ a{
   width: 100%;
 }
 
+#Our_Impact_Title{
+  height: 7vh;
+  background: #FBECE1;
+  text-align: center;
+}
+
 #Your_Impact{  
   height: 100vh;
   background: #90ee90;
@@ -116,25 +132,50 @@ button{
   font-weight: bold;
   text-align: center;
 }
+
 h1{
-  margin: 100px;
+  margin: 70px;
   text-align: center;
   padding: 0;
 }
+
+#Images_Our_Impact{
+}
+
+
 
 @media screen and (min-width: 601px) {
     #Home_Text{
       font-size: 2.5em;
       opacity: 0.81;
     }
-  }
 
+}
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   #Home_Text {
     font-size: 1.375em;
     /*Done exactly/properly to pixel size from Adobe XD mockup - used px to em conversion from w2s to calculate this*/
     opacity: 0.81;
+  }
+  /*Code below is used for the responsive hamburger menu which comes in size when width is 600px wide or less */
+  label{ 
+      display: block;
+      cursor: pointer;
+      float: right;  /*Hamburger menu set to right side and cursor changed to pointer when hovered over*/
+  }
+  .menu{
+      text-align: center;
+      width: 100%;
+      display: none; 
+  }
+
+  .menu a{
+      clear: right;
+      display: block;
+  }
+  #toggle:checked + .menu{
+      display: block;
   }
 }
 
