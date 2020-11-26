@@ -72,39 +72,37 @@ a{
 
 
 #Our_Impact{  
-  height: 100%;
+  height: 100vh;
   background: #F6F6F6;
   display: inline-block;
 }
 
  #Our_Impact_First_Column{
-  display: flex; 
+  position: relative; 
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column; 
-  align-self: flex-start;
   margin-left: 100px;
   float: left; 
 
 }
 
 #Our_Impact_Second_Column{
-  display: inline-block;
+  display: flex;
   flex-direction: column; 
+  text-align: center; 
+  justify-content: space-between;
+  word-wrap: break-word;
 
+}
+
+.container{
+  display:flex;
 }
 
 
 
-#Our_Impact_First_Row{
-
-}
-
-#Our_Impact_Second_Row{
-  margin-right: 200px;
-  max-width: 400px;
-  display: inline-block;
-  flex-direction: center;
-
-}
 
 #Our_Impact_Title{
   height: 7vh;
