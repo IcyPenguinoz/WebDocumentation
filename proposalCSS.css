@@ -1,6 +1,6 @@
 html{
   scroll-behavior: smooth;
-  /*Allows proper smooth navigation when clicking on navigation bar to page*/
+  /*Allows proper smooth navigation when clicking on navigation bar to pages - e.g. Home, Our Impact, Your Impact and Donate Now*/
 }
 body{
   margin: 0;
@@ -22,10 +22,9 @@ nav{
   width: 100%;
   background: #FFFFFF;
   overflow: hidden;
-  /*prevents scrollbars from appearing*/
   position: fixed;
   top: 0;
-  z-index: 1; /*Specifies stack order for elements - in this case nav bar has to be in front/on top of all elements on website https://www.w3schools.com/cssref/pr_pos_z-index.asp*/
+  z-index: 1; /*Specifies stack order for elements - in this case nav bar has to be in front/on top of all elements on website and is done via putting z-index value as 1 */
 
 }
 
@@ -38,7 +37,7 @@ ul{
 
 li{
   float: left;
-  /*Fix for alignment of nav bar: https://stackoverflow.com/questions/23737414/why-menu-created-with-ul-li-elements-displayed-in-reverse-order/23737545*/
+  /*Fix for alignment of nav bar */
 }
 
 a{
@@ -90,7 +89,7 @@ a{
 
  #Our_Impact_First_Column{
   width: 1000px;
-  display: flex;
+  display: flex; /*Flexbox used as an important tool to properly align elements which in this case helped a lot as it allowed for proper and even alignments*/
   justify-content: space-between;
   flex-direction: column; 
   margin-left: 100px;
@@ -133,7 +132,6 @@ a{
 
 }
 
-
 .Your_Impact_Section{
   display: flex;
   flex-direction: row;
@@ -157,9 +155,6 @@ a{
   word-wrap: break-word;
   max-width: 350px; /*Allows for text to not overflow*/
   padding: 5px; /*Added padding for spacing between elements*/
-
-
-
 }
 
 #Your_Impact_Titles{
@@ -227,8 +222,6 @@ h1{
 }
 
 
-
-
 @media screen and (min-width: 601px) {
     #Home_Text{
       font-size: 2.5em;
@@ -286,9 +279,6 @@ h1{
   width: 410px;
   height: 50px;
 
-}
-
-.Donation_Amount_Element{
 }
 
 .Donation_Amount{
@@ -395,5 +385,4 @@ h1{
   border-radius: 50%;
   float: right;
 }
-
 

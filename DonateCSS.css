@@ -219,7 +219,12 @@ h1{
   color: #FFFFFF;
   font-weight: bold;
   text-align: center;
+  transition: 0.3s;
 }
 
+.Donation_Nav:hover{ /*Added same animation as last "continue" button for consistency and a bit more visual confirmation*/
+  background-color: green; 
+  color: white;
+}
 
 
